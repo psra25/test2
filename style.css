@@ -1,0 +1,121 @@
+/*
+Black: Grey
+White: Azure
+Red: Tomato
+Green: ForestGreen
+*/
+
+/* The general body */
+body {
+    margin: 0;
+    font-family: Calibri;
+    font-weight: none;
+    font-size: 1.5vw;
+}
+
+/* The general Navigation Bar */
+#navigationBar {
+    background-color: #101010;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    /* Log: The edit below is dangerous as I had some layering issue and this is my only solve
+    This should NOT be a permanent solution I'm only curing the effect but not the cause. */
+    z-index: 9999;
+}
+
+/* Links of the Navigation Bar, plus hovering details and setting buttons to their positions */
+#navigationBar a {
+    margin: 0px;
+    padding: 1.5vw;
+    display: inline-block;
+    color: MintCream;
+    /*background-color: #000000;*/
+    text-decoration: none;
+    
+} #navigationBar a:hover {
+    background-color: #900000;
+    
+} #navigationButtonsLeft {
+    float: left;
+    
+} #navigationButtonsRight {
+    float: right;
+    
+} #navigationBarPlaceHolder {
+    margin: 0px;
+    padding: 1.5vw;
+}
+
+/* Actual written content */
+#content {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* I only want to cover it from top to down. That should be 100vh - 6vw - 2*line-height */
+    min-height: calc(100vh - 6vw + 2vw);
+    /* The math is still wrong here, I hope to fix it */
+/* Details of the image */
+} #content .content-header-image {
+    background-image: url("HomeBgImg.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: grayscale(1);
+/* Words on the image */
+} #content .content-header-image-comment {
+    color: black;
+    width: 100%;
+    min-height: inherit;
+    font-size: 3vw;
+    font-weight: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Details about the written content */
+#writtenContentHome {
+    padding: 3vw;
+    background-color: MintCream;
+
+/* Headers - Level 3 */
+} #writtenContentHome h3 {
+    font-size: 3vw;
+    color: #ac0000;
+
+/* Texts */
+} #writtenContentHome p {
+    margin: 2vw;
+}
+
+/* Footer details */
+#footer {
+    background-color: DarkGreen;
+    color: Azure;
+    padding: 1.5vw;
+}
+
+/* Miscalleneous texts: Empty indications */
+.emptyDialogue {
+    color: Grey;
+    font-weight: bold;
+}
+
+/* Sizing for different devices: If it is too big, resize it down */
+@media screen and (min-width: 1250px) {
+    body {
+        font-size: 1vw;
+    }
+    
+    #navigationBar a {
+        padding: 1vw;
+    } #navigationBarPlaceHolder {
+        padding: 1vw;
+    }
+    
+    #footer {
+        padding: 1vw;
+    }
+}

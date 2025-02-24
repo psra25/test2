@@ -1,0 +1,10 @@
+My goals for the website:
+    1) Add a "Join now" button on the image (archived)
+    2) Write some content for the Homepage (archived)
+    3) Copy-paste HTML for all other pages (done)
+    4) Write information on how to join (done)
+    5) Write section about the team (done)
+    6) Write there are no articles (done)
+    7) Write there are no Blogs (done)
+    8) Make the content section reach to the end of the viewport (half-fixed)
+    9) Make the navigation bar unscrollable (half-fixed)

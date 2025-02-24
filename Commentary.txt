@@ -1,0 +1,21 @@
+This is the official commentary for this website.
+
+1/26/25: I'm making the website for this thing. I'm looking at a lot of other websites and I realize that they generally put overviews of all their works on the homepage. Since we don't have any works done yet, I'll put an about us section later. This has to become its own page later and we'll put overviews of our current works on the homepage. We also need a logo as soon as possible.
+I did NOT know what trademarks are. We'll probably need to register trademarks for our logo and name. I got some information here: https://www.gerbenlaw.com/university/trademark-symbols/
+More information on making our organization: https://www.youtube.com/shorts/6IvBSoppPQU
+https://www.youtube.com/shorts/PbdRNHjl8WU
+https://www.youtube.com/shorts/2F6YD_xBi-4
+
+1/27/25: Finally, after spending literally every hour I had, Allah has helped me finish it
+I want to put lots attention to some issues I had.
+The first problem is the navigation bar. I just set the z-layer to 9999
+to make sure it doesn't go under other items, but that only solves the
+effect, NOT the cause. It would be much more efficient to remove that
+line and fix the cause.
+Also, my math is pretty bad for determining the minimum height of the content.
+If the content is too small, I want there to be enough whitespace so that
+the bottom shows up at the very bottom. That's about the height of the display
+(100 vh) minus the height of the nav bar and footer (6 vw). But I don't
+know the height of the text I used, so you can slightly scroll up and down.
+It's not a problem but its imperfection that could lead to more problems in
+the future.
